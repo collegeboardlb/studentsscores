@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Score Report</title>
+<style>
+  :root { --bg:#f3f5f8; --ink:#1c2430; --muted:#5b6675; --card:#fff; --line:#d9dee6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12161c; --ink:#e8ecf2; --muted:#9aa5b5; --card:#1b212a; --line:#2d3644; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.6; }
+  main { max-width:860px; margin:0 auto; padding:40px 20px 56px; }
+  h1 { font-size:clamp(1.8rem,5vw,2.6rem); margin:0 0 6px; }
+  p.sub { margin:0 0 28px; color:var(--muted); font-family:system-ui,sans-serif; }
+  figure { margin:0; background:var(--card); border:1px solid var(--line); border-radius:6px; padding:12px; }
+  img { display:block; width:100%; height:auto; border-radius:3px; }
+  a.btn { display:inline-block; margin-top:18px; padding:10px 16px; border:1px solid var(--ink);
+          color:var(--ink); text-decoration:none; font:600 .95rem system-ui,sans-serif; border-radius:4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>My test results</h1>
+  <p class="sub">Test date: October 3, 2026</p>
+  <figure>
+    <img src="score-report.jpg" alt="Score report image">
+  </figure>
+  <a class="btn" href="score-report.jpg" download>Download image</a>
+</main>
+</body>
+</html>
